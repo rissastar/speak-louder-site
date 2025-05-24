@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery – Speak Louder, Love Harder</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    .gallery-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      padding: 2rem;
+    }
+    .gallery-grid img {
+      max-width: 300px;
+      cursor: pointer;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    }
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 1000;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.8);
+      align-items: center;
+      justify-content: center;
+    }
+    .lightbox img {
+      max-width: 90%;
+      max-height: 90%;
+      border-radius: 10px;
+    }
+    .lightbox.show {
+      display: flex;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Speak Louder, Love Harder</h1>
+    <nav class="mobile-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="connect.html">Connect</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <img src="https://placekitten.com/300/200" alt="Photo 1">
+      <img src="https://placekitten.com/301/200" alt="Photo 2">
+      <img src="https://placekitten.com/302/200" alt="Photo 3">
+    </div>
+  </section>
+
+  <div class="lightbox" id="lightbox">
+    <img src="" alt="Expanded View">
+  </div>
+
+  <script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = lightbox.querySelector('img');
+
+    document.querySelectorAll('.gallery-grid img').forEach(img => {
+      img.addEventListener('click', () => {
+        lightbox.classList.add('show');
+        lightboxImg.src = img.src;
+      });
+    });
+
+    lightbox.addEventListener('click', () => {
+      lightbox.classList.remove('show');
+      lightboxImg.src = '';
+    });
+  </script>
+</body>
+</html>
