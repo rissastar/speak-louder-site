@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guestbook | Speak Louder, Love Harder</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f3f3f3;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #4a148c;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #6a1b9a;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
+      display: block;
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      background-color: #8e24aa;
+    }
+
+    main {
+      padding: 30px;
+    }
+
+    h2 {
+      color: #6a1b9a;
+    }
+
+    form {
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    button {
+      background-color: #6a1b9a;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #8e24aa;
+    }
+
+    .entries {
+      background: white;
+      padding: 20px;
+      margin-top: 30px;
+      border-radius: 8px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .entry {
+      border-bottom: 1px solid #ccc;
+      padding: 10px 0;
+    }
+
+    .entry:last-child {
+      border-bottom: none;
+    }
+
+    footer {
+      background-color: #4a148c;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Speak Louder, Love Harder</h1>
+  <p>Guestbook</p>
+</header>
+
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Me</a>
+  <a href="mentalhealth.html">Mental Health</a>
+  <a href="cf.html">Cystic Fibrosis</a>
+  <a href="cirrhosis.html">Cirrhosis</a>
+  <a href="addiction.html">Addiction</a>
+  <a href="pitbull.html">Pitbull Love</a>
+  <a href="foster.html">Foster Children</a>
+  <a href="abuse.html">Abuse & DV</a>
+  <a href="connect.html">Connect</a>
+  <a href="guestbook.html">Guestbook</a>
+</nav>
+
+<main>
+  <h2>Sign My Guestbook</h2>
+  <p>Leave a kind message, some love, or share how this site helped you. Your words matter.</p>
+
+  <form action="https://formspree.io/f/mexample" method="POST">
+    <label for="name">Name (or leave anonymous):</label>
+    <input type="text" name="name" id="name">
+
+    <label for="message">Message:</label>
+    <textarea name="message" id="message" rows="5" required></textarea>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <div class="entries">
+    <h3>Recent Entries:</h3>
+    <div class="entry">
+      <strong>Sarah:</strong>
+      <p>This site is powerful and heartfelt. Thank you for sharing your truth.</p>
+    </div>
+    <div class="entry">
+      <strong>Anonymous:</strong>
+      <p>I never knew much about CF or cirrhosis—your content opened my eyes.</p>
+    </div>
+    <div class="entry">
+      <strong>Jason:</strong>
+      <p>Keep going. You're making a difference.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>© 2025 Speak Louder, Love Harder | Created by Larissa</p>
+</footer>
+
+</body>
+</html>
