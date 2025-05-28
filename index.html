@@ -3,100 +3,138 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Home | Speak Louder, Love Harder</title>
+  <title>Speak Louder, Love Harder</title>
   <link rel="stylesheet" href="styles.css" />
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #fff8f9;
+      font-family: 'Segoe UI', sans-serif;
       margin: 0;
       padding: 0;
+      background-color: #f7f7f7;
+      color: #333;
     }
 
     header {
-      background-color: #880e4f;
-      color: white;
-      padding: 20px;
+      background-color: #d9534f;
+      padding: 1rem;
       text-align: center;
-    }
-
-    nav {
-      background-color: #ad1457;
-      overflow: hidden;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 999;
     }
 
     nav a {
-      float: left;
-      display: block;
       color: white;
-      padding: 14px 20px;
+      margin: 0 1rem;
       text-decoration: none;
+      font-weight: bold;
     }
 
     nav a:hover {
-      background-color: #c2185b;
+      text-decoration: underline;
     }
 
-    main {
-      padding: 20px;
+    .container {
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
     }
 
-    h2 {
-      color: #6a1b9a;
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .quote {
+      font-style: italic;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+
+    .btn-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn-grid a {
+      background-color: #d9534f;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s;
+    }
+
+    .btn-grid a:hover {
+      background-color: #c9302c;
+    }
+
+    iframe {
+      width: 100%;
+      height: 500px;
+      border: none;
+      margin-top: 2rem;
     }
 
     footer {
-      background-color: #880e4f;
-      color: white;
       text-align: center;
-      padding: 15px;
-      margin-top: 20px;
+      padding: 1rem;
+      background-color: #f2f2f2;
+      color: #777;
     }
   </style>
 </head>
 <body>
 
 <header>
-  <h1>Speak Louder, Love Harder</h1>
-  <p>Where Healing Meets Truth, and Voices Rise Together</p>
+  <h2>Speak Louder, Love Harder</h2>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="mental-health.html">Mental Health</a>
+    <a href="cystic-fibrosis.html">Cystic Fibrosis</a>
+    <a href="cirrhosis.html">Cirrhosis</a>
+    <a href="addiction.html">Addiction</a>
+    <a href="pitbull-love.html">Pitbull Love</a>
+    <a href="foster-care.html">Foster Care</a>
+    <a href="domestic-violence.html">Domestic Violence</a>
+    <a href="sexual-assault.html">Sexual Assault</a>
+    <a href="blog.html">Blog</a>
+    <a href="connect.html">Connect</a>
+  </nav>
 </header>
 
-<nav>
-  <a href="index.html">Home</a>
-  <a href="about.html">About Me</a>
-  <a href="mental-health.html">Mental Health</a>
-  <a href="cf.html">Cystic Fibrosis</a>
-  <a href="cirrhosis.html">Cirrhosis</a>
-  <a href="addiction.html">Addiction</a>
-  <a href="pitbull-love.html">Pitbull Love</a>
-  <a href="foster-children.html">Foster Children</a>
-  <a href="domestic-violence.html">Abuse & DV</a>
-  <a href="sa-awareness.html">Sexual Assault</a>
-  <a href="connect.html">Connect</a>
-  <a href="blog.html">Blog</a>
-</nav>
+<div class="container">
+  <h1>Welcome to Speak Louder, Love Harder</h1>
+  <p class="quote">"Your story could be the key that unlocks someone else's prison."</p>
 
-<main>
-  <h2>Welcome to Speak Louder, Love Harder</h2>
-  <p>This is a place of honesty, healing, and heart. I created this space to raise awareness, build community, and give a voice to stories that often go unheard. Whether you're here because you're struggling, healing, curious, or supportive — you belong here.</p>
+  <p>This site is a safe space for truth, awareness, advocacy, and healing. I speak from lived experience — through pain, resilience, and strength — to bring attention to issues that are too often silenced. Whether you’re here to learn, to heal, or to take action — welcome. You are not alone.</p>
 
-  <blockquote>"When we speak louder and love harder, we break cycles — and build futures."</blockquote>
+  <div class="btn-grid">
+    <a href="mental-health.html">Mental Health</a>
+    <a href="cystic-fibrosis.html">Cystic Fibrosis</a>
+    <a href="cirrhosis.html">Cirrhosis</a>
+    <a href="addiction.html">Addiction Awareness</a>
+    <a href="pitbull-love.html">Pitbull Love</a>
+    <a href="foster-care.html">Foster Care</a>
+    <a href="domestic-violence.html">Domestic Violence</a>
+    <a href="sexual-assault.html">Sexual Assault</a>
+    <a href="blog.html">Blog</a>
+    <a href="connect.html">Connect</a>
+  </div>
 
-  <h3>What This Site Is About</h3>
-  <ul>
-    <li><strong>Cystic Fibrosis & Cirrhosis:</strong> Real life with chronic illness</li>
-    <li><strong>Mental Health:</strong> Coping tools, awareness & support</li>
-    <li><strong>Abuse Awareness:</strong> Domestic violence & sexual assault survival</li>
-    <li><strong>Foster Care & Addiction:</strong> Understanding the system & the struggle</li>
-    <li><strong>Pitbull Advocacy:</strong> Breaking stigma around a misunderstood breed</li>
-  </ul>
-
-  <h3>💌 Connect & Contribute</h3>
-  <p>Check out the <a href="blog.html" style="color:#2980b9; text-decoration: underline;">Blog</a> for personal stories and updates, or leave your thoughts in the <a href="connect.html" style="color:#2980b9; text-decoration: underline;">Guestbook</a>. I’d love to hear from you.</p>
-</main>
+  <h2>Guestbook</h2>
+  <p>Leave a message, share your story, or say hello 💬</p>
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfzFgjQJcV0OalPY7Hc6HBrNfGyW4YPsShw2VZ1eDPwLKXYlg/viewform?embedded=true" frameborder="0">Loading…</iframe>
+</div>
 
 <footer>
-  <p>© 2025 Speak Louder, Love Harder | One Voice Can Start a Movement</p>
+  &copy; 2025 Speak Louder, Love Harder. Created by Larissa 💖
 </footer>
 
 </body>
