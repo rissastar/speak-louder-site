@@ -2,298 +2,172 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Speak Louder, Love Harder - Cystic Fibrosis</title>
-  <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cystic Fibrosis - Speak Louder, Love Harder</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <style>
-    /* Reset and base */
-    * {
-      box-sizing: border-box;
-    }
     body {
+      font-family: 'Poppins', sans-serif;
       margin: 0;
-      background-color: #0d0d0d;
-      color: #eee;
-      font-family: 'Patrick Hand', cursive, Arial, sans-serif;
-      line-height: 1.6;
-      min-height: 100vh;
-      background-image: url('https://rissastar.github.io/speak-louder-site/img/paper-texture.png');
-      background-repeat: repeat;
-      background-size: auto;
+      background: #f6f9fa;
+      color: #333;
     }
-    a {
-      color: #2ee8c9;
+
+    header, footer {
+      background-color: #1e3d59;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
       text-decoration: none;
-    }
-    a:hover, a:focus {
-      text-decoration: underline;
-    }
-
-    /* Header */
-    header {
-      text-align: center;
-      padding: 2rem 1rem 1rem;
-      border-bottom: 1px solid #222;
-    }
-    header h1 {
-      margin: 0 0 0.25rem;
-      font-size: 3rem;
-      font-weight: normal;
-      color: #2ee8c9;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-    }
-    header p {
-      margin: 0;
-      font-size: 1.25rem;
-      color: #a0a0a0;
-      font-style: italic;
-    }
-
-    /* Navigation */
-    nav {
-      background: #111;
-      border-bottom: 1px solid #222;
-      padding: 0.75rem 0;
-    }
-    nav ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 1rem;
-    }
-    nav ul li a {
-      color: #eee;
-      text-transform: uppercase;
       font-weight: bold;
-      font-size: 0.85rem;
-      letter-spacing: 1.5px;
-      padding: 0.5rem 0.75rem;
-      border-bottom: 3px solid transparent;
-      transition: border-color 0.3s ease;
-      display: block;
-    }
-    nav ul li a:hover,
-    nav ul li a:focus {
-      border-bottom-color: #2ee8c9;
-      outline: none;
-    }
-    nav ul li a[aria-current="page"] {
-      border-bottom-color: #2ee8c9;
     }
 
-    /* Main container */
-    section#cystic-fibrosis {
-      max-width: 720px;
-      margin: 2rem auto 4rem;
-      background: rgba(25, 25, 25, 0.85);
-      padding: 2rem 2rem 3rem;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(46, 232, 201, 0.3);
+    main {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
 
-    /* Headings */
-    h1, h2, h3 {
-      color: #2ee8c9;
-      margin-top: 1.5rem;
-      margin-bottom: 0.75rem;
-    }
-    h1 {
-      font-size: 2.5rem;
-      text-align: center;
-      margin-top: 0;
-    }
-    h2 {
-      font-size: 1.8rem;
-    }
-    h3 {
-      font-size: 1.3rem;
+    h1, h2 {
+      color: #1e3d59;
     }
 
-    /* Paragraphs and lists */
-    p {
-      margin-bottom: 1rem;
-      font-size: 1.1rem;
-      color: #ddd;
-    }
-    ul {
-      list-style-type: square;
-      padding-left: 1.4rem;
-      margin-bottom: 1rem;
-    }
-    ul li {
-      margin-bottom: 0.5rem;
-      font-size: 1.1rem;
-    }
-
-    /* Images */
-    img {
-      display: block;
-      max-width: 100px;
-      margin: 1.25rem auto;
-      filter: drop-shadow(0 0 2px #2ee8c9);
-      border-radius: 6px;
-    }
-
-    /* Blockquote */
-    blockquote {
-      border-left: 4px solid #2ee8c9;
-      padding-left: 1rem;
-      color: #a0a0a0;
+    .quote {
       font-style: italic;
-      margin: 2rem 0 2rem 0;
-      font-size: 1.2rem;
-      line-height: 1.4;
+      margin: 1rem 0;
+      background: #e5f3ff;
+      padding: 1rem;
+      border-left: 5px solid #007acc;
     }
 
-    /* Details/summary accordion style */
     details {
-      background: #111;
-      border-radius: 8px;
-      padding: 1rem 1.25rem;
-      margin: 1.5rem 0;
-      box-shadow: inset 0 0 5px #2ee8c9;
-      color: #ccc;
-      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+      background: #f0f4f8;
+      padding: 1rem;
+      border-left: 5px solid #1e3d59;
+      border-radius: 5px;
     }
+
     summary {
       font-weight: bold;
       cursor: pointer;
-      outline: none;
-      color: #2ee8c9;
-      user-select: none;
-      font-size: 1.2rem;
-      list-style: none;
-      margin-bottom: 0.5rem;
-    }
-    summary::-webkit-details-marker {
-      display: none;
-    }
-    summary::before {
-      content: "▶ ";
-      display: inline-block;
-      transition: transform 0.2s ease-in-out;
-      font-weight: bold;
-    }
-    details[open] summary::before {
-      transform: rotate(90deg);
-    }
-    details p, details ul {
-      margin-top: 0.5rem;
-      color: #ddd;
     }
 
-    /* Responsive */
-    @media (max-width: 720px) {
-      section#cystic-fibrosis {
+    ul {
+      margin-top: 0.5rem;
+      padding-left: 1.25rem;
+    }
+
+    @media (max-width: 600px) {
+      main {
         margin: 1rem;
         padding: 1.5rem;
       }
-      header h1 {
-        font-size: 2rem;
-      }
-      h1 {
-        font-size: 2rem;
-      }
-      h2 {
-        font-size: 1.5rem;
-      }
-      h3 {
-        font-size: 1.1rem;
-      }
-      nav ul {
+
+      nav {
+        display: flex;
+        flex-direction: column;
         gap: 0.5rem;
       }
-      nav ul li a {
-        font-size: 0.75rem;
-        padding: 0.3rem 0.5rem;
-      }
     }
-
   </style>
 </head>
 <body>
   <header>
     <h1>Speak Louder, Love Harder</h1>
-    <p>Living and thriving with Cystic Fibrosis</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="cystic-fibrosis.html">Cystic Fibrosis</a>
+      <a href="mental-health.html">Mental Health</a>
+      <a href="cirrhosis.html">Cirrhosis</a>
+      <a href="addiction.html">Addiction</a>
+      <a href="pitbull.html">Pitbull Love</a>
+      <a href="foster-care.html">Foster Care</a>
+      <a href="domestic-violence.html">Domestic Violence</a>
+      <a href="sexual-assault.html">Sexual Assault</a>
+      <a href="blog.html">Blog</a>
+    </nav>
   </header>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Me</a></li>
-      <li><a href="mental-health.html">Mental Health</a></li>
-      <li><a href="cf.html">Cystic Fibrosis</a></li>
-      <li><a href="cirrhosis.html">Cirrhosis</a></li>
-      <li><a href="pitbull-love.html">Pitbull Love</a></li>
-      <li><a href="addiction.html">Addiction</a></li>
-      <li><a href="foster-children.html">Foster Children</a></li>
-      <li><a href="domestic-violence.html">Domestic Violence</a></li>
-      <li><a href="sa-awareness.html">Sexual Assault</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="connect.html">Connect</a></li>
-    </ul>
-  </nav>
+  <main>
+    <h1>Cystic Fibrosis</h1>
 
-  <section id="cystic-fibrosis">
-    <h1>💙 My Life with Cystic Fibrosis</h1>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Cystic_Fibrosis_awareness_ribbon.svg/1024px-Cystic_Fibrosis_awareness_ribbon.svg.png" alt="CF Awareness Ribbon" />
+    <div class="quote">
+      “Living with Cystic Fibrosis is a daily battle—but every breath I take is a victory.”
+    </div>
 
-    <p><strong>⚠️ Health + Emotional Story Warning:</strong> This section includes personal medical history and emotional reflections. Please read with care.</p>
+    <section class="section">
+      <h2>What is Cystic Fibrosis?</h2>
+      <p>
+        Cystic Fibrosis (CF) is a genetic disorder that affects the lungs, digestive system, and other organs. It causes thick, sticky mucus to build up, leading to infections and breathing difficulties.
+      </p>
+    </section>
 
-    <h2>🧒 The Sick Kid Nobody Understood</h2>
-    <p>Before I was diagnosed, I was always sick. My stomach hurt constantly, I had issues in the bathroom, and I was much smaller than other kids. I wasn’t running around outside like most children — I was curled up indoors, reading, writing, and avoiding the pain. My belly was always bloated, and I rarely felt “normal.”</p>
+    <section class="section">
+      <h2>Symptoms & Challenges</h2>
+      <ul>
+        <li>Chronic coughing and lung infections</li>
+        <li>Difficulty breathing</li>
+        <li>Digestive problems and poor weight gain</li>
+        <li>Fatigue and frequent hospital stays</li>
+      </ul>
+    </section>
 
-    <h2>🏥 Childhood in the Halls of the IWK</h2>
-    <p>At age 7, I was officially diagnosed with Cystic Fibrosis. I spent nearly two months in the hospital — the IWK in Halifax became my second home. I learned how to swallow pills, use a nebulizer, and adjust to a routine most kids never imagine.</p>
-    <p>Appointments every few months were normal — chest X-rays, sweat tests, bloodwork, and breathing assessments. The staff at IWK were kind, but it didn’t take away the pain of living with CF, or the exhaustion of growing up fast. I took handfuls of medications daily: enzymes before every meal, vitamins, inhalers, and antibiotics.</p>
+    <section class="section">
+      <h2>My Story</h2>
+      <p>
+        I was diagnosed with CF as a child, and my experience has shaped so much of who I am today. There have been ups and downs — from my first hospital stays to starting Trikafta in 2021, which changed my life. But CF is always a part of my daily routine, a constant I live with and fight against.
+      </p>
+    </section>
 
-    <h2>🚑 The Rollercoaster of Hospital Stays</h2>
-    <p>As I got older, things got worse. Around age 16, I started getting really sick again. Hospital stays became monthly. Sometimes for two weeks, sometimes more. My lungs would fill up fast, and I’d need strong IV antibiotics, hours of therapy, and complete rest.</p>
-    <p>My teenage years weren’t like anyone else’s. I wasn’t going to parties — I was sleeping in hospital beds, hooked up to machines, watching life move on without me.</p>
+    <section class="section">
+      <h2>How You Can Help</h2>
+      <ul>
+        <li>Support CF research and organizations</li>
+        <li>Advocate for better healthcare access and coverage</li>
+        <li>Raise awareness to break down stigma</li>
+        <li>Be kind and patient with those living with chronic illness</li>
+      </ul>
+    </section>
 
-    <h2>💊 Everything Changed with Trikafta</h2>
-    <p>In December 2021, everything changed. I started Trikafta — a medication that targets the root cause of CF. I finally felt my lungs open up. I could breathe. I could walk without coughing. I could <em>live</em>.</p>
-    <p>This medication gave me back time I thought I lost. It’s not a cure, but it’s the closest thing we have right now, and it’s been life-changing.</p>
+    <section class="section">
+      <h2>FAQs</h2>
+      <details>
+        <summary>Is CF contagious?</summary>
+        <p>No, Cystic Fibrosis is a genetic condition and cannot be spread from person to person.</p>
+      </details>
+      <details>
+        <summary>Can people with CF live normal lives?</summary>
+        <p>With treatment advances like Trikafta, many people with CF live longer, fuller lives than ever before.</p>
+      </details>
+      <details>
+        <summary>How is CF diagnosed?</summary>
+        <p>CF is diagnosed through newborn screening, sweat tests, and genetic testing.</p>
+      </details>
+    </section>
 
-    <h2>🌟 What Is Cystic Fibrosis?</h2>
-    <p>Cystic Fibrosis (CF) is a genetic disease that causes thick, sticky mucus to build up in the lungs, digestive tract, and other organs. This mucus clogs airways and traps bacteria, leading to infections, lung damage, and digestive issues.</p>
-    <p>CF affects about 30,000 people in North America. It’s a life-long condition requiring daily care, medication, and frequent hospital visits.</p>
+    <section class="section">
+      <h2>Support & Resources</h2>
+      <ul>
+        <li><a href="https://www.cysticfibrosis.ca/" target="_blank" rel="noopener noreferrer">Cystic Fibrosis Canada</a></li>
+        <li><a href="https://www.cff.org/" target="_blank" rel="noopener noreferrer">Cystic Fibrosis Foundation (US)</a></li>
+        <li><a href="https://www.nhlbi.nih.gov/health-topics/cystic-fibrosis" target="_blank" rel="noopener noreferrer">NIH: Cystic Fibrosis Info</a></li>
+      </ul>
+    </section>
+  </main>
 
-    <h2>🔬 CF Facts</h2>
-    <ul>
-      <li>CF is caused by mutations in the CFTR gene.</li>
-      <li>The average life expectancy has increased to over 50 years, thanks to advances in treatment.</li>
-      <li>Daily treatments include airway clearance, enzymes, vitamins, and sometimes IV antibiotics.</li>
-      <li>CF patients are at higher risk for lung infections like Pseudomonas aeruginosa.</li>
-      <li>Trikafta is a breakthrough medication that improves lung function for many CF patients.</li>
-    </ul>
-
-    <h2>🤝 How You Can Help</h2>
-    <ul>
-      <li><strong>Donate:</strong> Support CF research and patient care organizations like the Cystic Fibrosis Foundation (<a href="https://www.cff.org" target="_blank" rel="noopener noreferrer">cff.org</a>).</li>
-      <li><strong>Advocate:</strong> Raise awareness about CF in your community and encourage better health policies.</li>
-      <li><strong>Volunteer:</strong> Help at local CF events or fundraisers.</li>
-      <li><strong>Be Compassionate:</strong> Understand the daily challenges CF patients face—living with chronic illness is exhausting.</li>
-      <li><strong>Follow COVID-19 Precautions:</strong> CF patients are vulnerable to respiratory infections; help keep them safe.</li>
-    </ul>
-
-    <h2>📞 Useful Links & Resources</h2>
-    <ul>
-      <li><a href="https://www.cff.org" target="_blank" rel="noopener noreferrer">Cystic Fibrosis Foundation</a></li>
-      <li><a href="https://www.cfsa.org" target="_blank" rel="noopener noreferrer">Cystic Fibrosis Canada</a></li>
-      <li><a href="https://www.nhlbi.nih.gov/health-topics/cystic-fibrosis" target="_blank" rel="noopener noreferrer">NIH CF Information</a></li>
-      <li><a href="https://www.cff.org/Life-With-CF/COVID-19" target="_blank" rel="noopener noreferrer">CF and COVID-19 Guidance</a></li>
-    </ul>
-
-    <h2>💬 Personal Message</h2>
-    <blockquote>
-      "Living with CF is a daily battle, but it has taught me resilience and hope. I share my story to remind others they are not alone — and to inspire more understanding and support."
-    </blockquote>
-
-  </section>
+  <footer>
+    <p>© 2025 Speak Louder, Love Harder | Created by Larissa</p>
+  </footer>
 </body>
 </html>
