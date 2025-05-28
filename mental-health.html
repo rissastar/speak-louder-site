@@ -1,288 +1,134 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Mental Health | Speak Louder, Love Harder</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mental Health — Speak Louder, Love Harder</title>
+  <link rel="stylesheet" href="styles.css" />
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
     body {
-      font-family: Arial, sans-serif;
-      background-color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0; padding: 0;
+      background-color: #f7f7f7;
       color: #333;
-      line-height: 1.6;
     }
 
     header {
-      background-color: #6c63ff;
-      color: #fff;
+      background-color: #d9534f;
+      padding: 1rem;
       text-align: center;
-      padding: 40px 20px;
-    }
-
-    nav {
-      background-color: #f5f5f5;
-      padding: 10px 0;
-    }
-
-    nav ul {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      list-style: none;
-      gap: 12px;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 999;
     }
 
     nav a {
+      color: white;
+      margin: 0 1rem;
       text-decoration: none;
-      color: #333;
       font-weight: bold;
-      padding: 8px 16px;
-      border-radius: 4px;
     }
 
     nav a:hover {
-      background-color: #6c63ff;
-      color: #fff;
+      text-decoration: underline;
     }
 
-    main {
-      padding: 30px 20px;
+    .container {
       max-width: 900px;
       margin: auto;
+      padding: 2rem;
     }
 
-    h2, h3 {
-      color: #6c63ff;
-      margin-bottom: 15px;
-      display: flex;
-      align-items: center;
-      gap: 10px;
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.25rem;
     }
 
-    ul {
-      margin-left: 20px;
-      margin-bottom: 20px;
+    .quote {
+      font-style: italic;
+      color: #666;
+      margin-bottom: 2rem;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+
+    details {
+      background-color: #fff;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 0 6px rgba(0,0,0,0.1);
+    }
+
+    summary {
+      font-weight: bold;
+      cursor: pointer;
     }
 
     footer {
-      background-color: #f5f5f5;
       text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      margin-top: 40px;
-    }
-
-    .section-icon {
-      width: 24px;
-      height: 24px;
-    }
-
-    @media (max-width: 600px) {
-      nav ul {
-        flex-direction: column;
-        align-items: center;
-      }
-
-      nav a {
-        padding: 10px;
-      }
+      padding: 1rem;
+      background-color: #f2f2f2;
+      color: #777;
+      margin-top: 3rem;
     }
   </style>
 </head>
 <body>
 
-  <header>
-    <h1>Speak Louder, Love Harder</h1>
-    <p>Let's talk about mental health</p>
-  </header>
-
+<header>
+  <h2>Speak Louder, Love Harder</h2>
   <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Me</a></li>
-      <li><a href="mental-health.html">Mental Health</a></li>
-      <li><a href="cf.html">Cystic Fibrosis</a></li>
-      <li><a href="cirrhosis.html">Cirrhosis</a></li>
-      <li><a href="pitbull-love.html">Pitbull Love</a></li>
-      <li><a href="addiction.html">Addiction</a></li>
-      <li><a href="foster-children.html">Foster Children</a></li>
-      <li><a href="domestic-violence.html">Domestic Violence</a></li>
-      <li><a href="sa-awareness.html">Sexual Assault</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="connect.html">Connect</a></li>
-    </ul>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="mental-health.html">Mental Health</a>
+    <a href="cystic-fibrosis.html">Cystic Fibrosis</a>
+    <a href="cirrhosis.html">Cirrhosis</a>
+    <a href="addiction.html">Addiction</a>
+    <a href="pitbull-love.html">Pitbull Love</a>
+    <a href="foster-care.html">Foster Care</a>
+    <a href="domestic-violence.html">Domestic Violence</a>
+    <a href="sexual-assault.html">Sexual Assault</a>
+    <a href="blog.html">Blog</a>
+    <a href="connect.html">Connect</a>
   </nav>
+</header>
 
-  <main>
-    <h2>Mental Health</h2>
+<div class="container">
+  <h1>Mental Health</h1>
+  <p class="quote">“Healing isn’t linear. Be gentle with yourself.”</p>
 
-    <p>Mental health is just as real and important as physical health — and it’s time we treated it that way. Whether you’re dealing with depression, anxiety, PTSD, or just feeling overwhelmed by life, your emotions are valid. You’re not weak. You’re human.</p>
-
-    <h3><img src="https://img.icons8.com/ios-filled/50/7b6cff/heart-with-pulse.png" alt="Heart icon" class="section-icon" />Common Mental Health Conditions</h3>
-    <ul>
-      <li><strong>Depression:</strong> Persistent sadness, loss of interest, fatigue, and more.</li>
-      <li><strong>Anxiety Disorders:</strong> Constant worry, panic attacks, social anxiety.</li>
-      <li><strong>PTSD:</strong> Trauma response that includes flashbacks, avoidance, and emotional numbness.</li>
-      <li><strong>Bipolar Disorder:</strong> Extreme mood swings from highs (mania) to lows (depression).</li>
-      <li><strong>OCD:</strong> Obsessions and compulsions that can interfere with daily life.</li>
-      <li><strong>Borderline Personality Disorder (BPD):</strong> Intense emotions, unstable relationships, and fear of abandonment.</li>
-      <li><strong>Schizophrenia:</strong> Symptoms include hallucinations, delusions, and disorganized thinking.</li>
-      <li><strong>Dysthymia (Persistent Depressive Disorder):</strong> Chronic, mild depression lasting for at least two years.</li>
-      <li><strong>Social Anxiety Disorder:</strong> Extreme fear of social situations and being judged by others.</li>
-    </ul>
-
-    <h3>My Personal Experience</h3>
-    <p>Add this stuff to my mental-health.html under my experience 
-My Mental Health Journey
-
-Mental health is something I used to ignore—or honestly, just survive through. Growing up with Cystic Fibrosis meant the focus was always on my body, not my mind. But the truth is, the emotional pain I’ve carried has been just as heavy—maybe even heavier—than the physical.
-
-Even before I was taken away from my mom, I remember feeling sad all the time. When I was 10 years old, I wrote in my journal: “I think I’m depressed. I cry myself to sleep every night.” Those feelings weren’t new—they were already inside me, growing and shaping who I was.
-
-I was always scared—scared of being hurt, scared of being kidnapped or killed. I’m still not sure if those fears came from things I experienced or just from the world feeling so unsafe. But they were real. They made me feel small and trapped. I also remember watching my mom go downhill—knowing something was wrong but not knowing how to help her or even talk about it.
-
-After being taken away from my mom, I was forced to talk to a therapist by court order. I didn’t feel safe or ready, and therapy felt more like a punishment than a place of healing. I didn’t know how to open up, and I carried that fear and mistrust with me for years.
-
-At around 14, I was diagnosed with Borderline Personality Disorder (BPD) and placed on medication. Finding something that actually helped was a frustrating journey. I went through multiple medications before finally finding Olanzapine, which stabilized some of the chaos in my head—but it left me feeling sedated and disconnected. I had to come off of it. That just added to the cycle: feeling broken, trying to get better, then feeling broken all over again.
-
-For years, I was in and out of hospitals—struggling with deep depression, suicidal thoughts, and emotional breakdowns. I wanted help. I just didn’t know how to let it in. And truthfully, I didn’t feel like I deserved it.
-
-One of the scariest parts of living with mental illness for me has been the memory loss. There are chunks of my childhood I can’t remember at all—whole years that feel foggy or completely gone. It’s like my brain blacked out pieces to protect me. Trauma does that—it hides the memories too painful to process. And even now, I’ll forget things people tell me, or blank out during intense moments, and I hate it. It makes me feel like I’m not in control of my own story.
-
-That’s tied to my fight or flight mode, which kicks in constantly. I’ve lived in survival mode for so long that it became my default setting. I overreact to things I know shouldn’t bother me, but my body doesn’t care. My heart races, my hands shake, my mind panics—and I either want to run, shut down completely, or lash out emotionally. It’s not something I choose. It’s my brain trying to protect me, even when the danger isn’t real anymore.
-
-I’ve always had a fear of dying. Not just the act of dying—but the blackness, the nothingness that might come after. I used to lie awake at night, terrified of the thought that I might disappear and no one would remember me. That all of this—life, pain, love, trying—might be for nothing. I’ve always questioned why we’re even here. What’s the point of it all? Why do some of us have to go through so much while others live untouched by pain? That fear, that emptiness, it clings to me in my darkest moments.
-
-And then there’s my empathy—this thing that lets me feel so deeply, sometimes it breaks me. I get hurt by little things most people wouldn’t think twice about. If I see someone hurting, I feel it like it’s happening to me. It’s not just sympathy, it’s full-body pain. I carry emotions that don’t even belong to me because I can’t stand the idea of someone else suffering. But it also means I break down easily. That I care so much it sometimes destroys me. That I’ll put others before myself, even when I’m barely hanging on.
-
-The loneliness that comes with all of this is intense. I’ve withdrawn from friends and family—not because I don’t love them, but because I feel like I’m drowning and I don’t want to drag anyone down with me. The uncontrollable thoughts, the self-hate, the fear, the flashbacks—it all builds up inside. It’s hard to explain to someone who’s never been in that place. It’s even harder when you try and they still don’t get it.
-
-I’ve survived sexual assault, emotional abuse, neglect, abandonment. I’ve been bullied, degraded, broken down—by people who should have loved me, and by people I trusted with my heart. I’ve stayed in toxic relationships because I was afraid to be alone. I’ve begged people to stay, even when they hurt me, just so I wouldn’t feel unwanted again. That kind of damage doesn’t go away overnight.
-
-School was hell. I was bullied for my looks, for being different, for being a foster kid. They made fun of my real family—said cruel things about why we were taken. I already hated myself, and the bullying just confirmed what I believed: that I was nothing. That I didn’t belong. That I’d never be enough.
-
-And yet—somehow—I’m still here.
-
-I’m in therapy again. Real therapy. I’ve opened myself up in ways I never thought I could. I’m working closely with a psychiatrist and trying to get into a Dialectical Behavior Therapy (DBT) program. I’m also doing a lot of self-work with books focused on BPD and Cognitive Behavioral Therapy (CBT). I’m trying. Even on the days when it feels impossible, I still try. I get out of bed. I take care of Zayah. I write. I fight.
-
-I’ve realized I can’t do this alone. I need people in my life who are patient, who listen, who care. People who won’t punish me for needing time, space, or healing. People who lift me up, not drag me back down. And anyone who can’t show up for me with kindness and empathy will be left behind.
-
-I don’t want to feel this way forever. I don’t want to live in pain. I don’t want to be invisible or forgotten. I want to be loved in the way I love. I want peace. I want clarity. I want freedom—from trauma, from shame, from fear.
-
-I am not who I was a year ago.
-I’ve grown through unimaginable pain.
-And I’m still becoming someone stronger, wiser, and more me than I’ve ever been before. 🫶🏻.</p>
-
-   <section id="mental-health">
-  <h1>🧠 Mental Health Matters</h1>
-
-  <p>Living with chronic illness, trauma, or just being human in this world? Your mental health is valid, important, and deserves care. I've been there. The heavy days. The breakdowns. The not wanting to get out of bed. I’m here to say — you’re not alone, and healing is not linear.</p>
-
-  <h2>🌧️ It’s Okay to Not Be Okay</h2>
-  <p>Mental health isn’t just about depression or anxiety — it’s about how we process pain, love, fear, joy, and life itself. It shows up in our bodies, our relationships, and our habits. For people like me with Cystic Fibrosis, cirrhosis, and past trauma, it's part of daily survival.</p>
-  <p>You don’t have to be strong every second. You don’t have to explain your sadness. Just being here is proof of your resilience.</p>
-
-  <h2>💡 Things That Helped Me (Maybe They’ll Help You Too)</h2>
-  <ul>
-    <li>🌿 Journaling my thoughts, even if they didn’t make sense</li>
-    <li>🎧 Music that understood me when words couldn’t</li>
-    <li>🐶 Zayah — my dog, my safe space, my healing</li>
-    <li>🌤️ Taking it day by day (or minute by minute)</li>
-    <li>💬 Talking to someone — even just once — when it all felt too much</li>
-  </ul>
+  <p>Mental health is a journey full of challenges, triumphs, and self-discovery. Through my experiences, I’ve learned the importance of speaking openly, seeking support, and breaking stigma.</p>
 
   <details>
-    <summary>📌 Self-Care Tips (Real Ones, Not Just Bubble Baths)</summary>
-    <ul>
-      <li>Say “no” without guilt — protect your energy</li>
-      <li>Drink water and eat something — even if it’s small</li>
-      <li>Take social media breaks — your brain needs quiet too</li>
-      <li>Get fresh air — stand outside, feel the wind, breathe</li>
-      <li>Celebrate the little wins: brushing your teeth, sending a text, getting dressed</li>
-    </ul>
+    <summary>Common Mental Health Challenges</summary>
+    <p>Depression, anxiety, PTSD, and bipolar disorder are some of the conditions many face. Recognizing symptoms early can lead to better outcomes.</p>
   </details>
 
-  <h2>📞 You Are Not Alone</h2>
-  <p>If you're struggling, please reach out. There are people who want to listen. I’ve included a few places that helped me or others I know:</p>
+  <details>
+    <summary>How to Support Someone Struggling</summary>
+    <p>Listen without judgment, encourage professional help, and be patient. Your presence can make a huge difference.</p>
+  </details>
 
-  <ul>
-    <li><a href="https://www.crisisservicescanada.ca/en/" target="_blank">Crisis Services Canada</a> – 1-833-456-4566 (24/7)</li>
-    <li><a href="https://kidshelpphone.ca/" target="_blank">Kids Help Phone</a> – Call or text 686868 (not just for kids!)</li>
-    <li><a href="https://wellnesstogether.ca" target="_blank">Wellness Together Canada</a> – Free online mental health support</li>
-  </ul>
+  <details>
+    <summary>Self-Help Tips</summary>
+    <p>Practice mindfulness, stay active, maintain a routine, and reach out to trusted people when you need help.</p>
+  </details>
 
-  <blockquote>
-    “You don't have to feel okay to keep going. You just have to be honest, gentle, and try again tomorrow.” — Larissa
-  </blockquote>
-</section>
+  <details>
+    <summary>Resources</summary>
+    <p><a href="https://www.crisisservicescanada.ca/en/" target="_blank" rel="noopener">Crisis Services Canada</a> - 24/7 support</p>
+    <p><a href="https://www.mentalhealthcommission.ca" target="_blank" rel="noopener">Mental Health Commission of Canada</a></p>
+  </details>
+</div>
 
-<section id="affirmations" style="margin-top: 3em;">
-  <h2>🌟 Daily Affirmations</h2>
-  <p>Save them. Screenshot them. Say them out loud. Let these words be your reminders:</p>
-
-  <div style="display: flex; flex-wrap: wrap; gap: 1em; justify-content: center; margin-top: 1em;">
-    <div style="background: #fce4ec; padding: 1em; border-radius: 10px; width: 200px; text-align: center;">
-      “I am not broken. I am rebuilding.”
-    </div>
-    <div style="background: #e3f2fd; padding: 1em; border-radius: 10px; width: 200px; text-align: center;">
-      “I survived every hard day — even the ones I thought I wouldn’t.”
-    </div>
-    <div style="background: #e8f5e9; padding: 1em; border-radius: 10px; width: 200px; text-align: center;">
-      “My emotions are valid. My story is mine.”
-    </div>
-    <div style="background: #fff3e0; padding: 1em; border-radius: 10px; width: 200px; text-align: center;">
-      “I don’t have to prove my pain to anyone.”
-    </div>
-    <div style="background: #ede7f6; padding: 1em; border-radius: 10px; width: 200px; text-align: center;">
-      “Healing isn’t pretty — but it’s powerful.”
-    </div>
-  </div>
-</section>
-
-<section id="mental-health-resources" style="margin-top: 3em;">
-  <h2>📚 Free Resources & Worksheets</h2>
-  <p>Use these free tools to support your mental wellness. Print them, journal with them, or just explore.</p>
-
-  <ul>
-    <li><a href="https://positivepsychology.com/wp-content/uploads/2021/01/Mental-Health-Worksheets.pdf" target="_blank">Mental Health Worksheets (PDF)</a></li>
-    <li><a href="https://www.therapistaid.com/worksheets" target="_blank">TherapistAid.com – Free Printables</a></li>
-    <li><a href="https://www.cci.health.wa.gov.au/Resources/Looking-After-Yourself" target="_blank">Center for Clinical Interventions – Workbooks</a></li>
-    <li><a href="https://www.mhanational.org/mental-health-screening-tools" target="_blank">Mental Health America – Self Screening Tools</a></li>
-    <li><a href="https://www.wellnessworkbook.com/" target="_blank">The Wellness Workbook by John W. Travis</a></li>
-  </ul>
-
-  <p style="font-size: 0.9em;">If you know any helpful books, journals, or apps, send me a message and I’ll add them here for others to see!</p>
-</section>
-
-    <p>You’re not broken. You’re fighting a battle most people never see — and that makes you strong. 💜</p>
-  </main>
-
-<section id="share-your-story" style="margin-top: 3em;">
-  <h2>🕊️ Share Your Story (Anonymously if You Want)</h2>
-  <p>Sometimes just getting it out helps. You can use this space to write what you’re going through, how you’ve survived, or whatever is on your heart. This is judgment-free.</p>
-
-  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" style="display: flex; flex-direction: column; gap: 1em; max-width: 600px; margin: auto;">
-    <label for="message">Your Story (Optional to Leave Your Name):</label>
-    <textarea id="message" name="message" rows="6" placeholder="Write your thoughts here..." required></textarea>
-
-    <label for="name">Your Name (Optional):</label>
-    <input type="text" id="name" name="name" placeholder="Leave blank to stay anonymous" />
-
-    <button type="submit" style="padding: 0.75em; background-color: #c0392b; color: white; border: none; cursor: pointer;">Submit</button>
-  </form>
-
-  <p style="font-size: 0.9em; text-align: center; margin-top: 1em;">🧡 Your story matters. And if you just needed a place to say it — I’m proud of you.</p>
-</section>
-
-  <footer>
-    <p>&copy; 2025 Speak Louder, Love Harder — Created by Larissa</p>
-  </footer>
+<footer>
+  &copy; 2025 Speak Louder, Love Harder. Created by Larissa 💖
+</footer>
 
 </body>
 </html>
