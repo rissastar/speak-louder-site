@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Pitbull Love | Speak Louder, Love Harder</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <title>Pitbull Love</title>
   <style>
+    /* Merged CSS */
     * {
       box-sizing: border-box;
       margin: 0;
@@ -13,143 +13,212 @@
     }
 
     body {
-      font-family: Arial, sans-serif;
-      background-color: #fff;
-      color: #333;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #fdfdfd;
+      color: #222;
       line-height: 1.6;
     }
 
     header {
-      background-color: #6c63ff;
+      background-color: #3b3b98;
       color: #fff;
+      padding: 20px 0;
       text-align: center;
-      padding: 40px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
     }
 
     nav {
-      background-color: #f5f5f5;
-      padding: 10px 0;
-    }
-
-    nav ul {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      list-style: none;
-      gap: 12px;
+      padding: 10px 0;
+      background-color: #4b4b9a;
     }
 
     nav a {
+      color: #fff;
       text-decoration: none;
-      color: #333;
-      font-weight: bold;
-      padding: 8px 16px;
+      padding: 10px 15px;
+      margin: 5px;
       border-radius: 4px;
     }
 
-    nav a:hover {
-      background-color: #6c63ff;
-      color: #fff;
+    nav a:hover,
+    nav a.active {
+      background-color: #6c6cd2;
     }
 
     main {
-      padding: 30px 20px;
       max-width: 900px;
-      margin: auto;
+      margin: 30px auto;
+      padding: 20px;
     }
 
-    h2, h3 {
-      color: #6c63ff;
+    .hero {
+      background-color: #f3f3ff;
+      padding: 30px;
+      border-radius: 10px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .hero h2 {
+      margin-top: 0;
+      color: #3b3b98;
+    }
+
+    .content-section {
+      margin-bottom: 40px;
+    }
+
+    .content-section h3 {
+      color: #3b3b98;
       margin-bottom: 15px;
     }
 
-    img {
-      max-width: 100%;
-      border-radius: 10px;
-      margin: 20px 0;
+    .content-section ul {
+      list-style: disc;
+      padding-left: 20px;
     }
 
-    ul {
-      margin-left: 20px;
-      margin-bottom: 20px;
+    .content-section ul li {
+      margin-bottom: 15px;
+    }
+
+    .callout,
+    .quote,
+    .facts-box {
+      background-color: #e6e6ff;
+      padding: 20px;
+      border-left: 5px solid #3b3b98;
+      border-radius: 6px;
+      margin-bottom: 30px;
+      font-weight: bold;
+    }
+
+    .facts-box {
+      font-weight: normal;
+    }
+
+    .image-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .image-gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+
+    blockquote {
+      background-color: #f0f0ff;
+      border-left: 6px solid #3b3b98;
+      margin: 20px 0;
+      padding: 20px;
+      font-style: italic;
     }
 
     footer {
-      background-color: #f5f5f5;
       text-align: center;
       padding: 20px;
-      font-size: 14px;
+      background-color: #3b3b98;
+      color: white;
       margin-top: 40px;
     }
 
-    @media (max-width: 600px) {
-      nav ul {
+    @media (max-width: 768px) {
+      nav {
         flex-direction: column;
-        align-items: center;
       }
 
       nav a {
-        padding: 10px;
+        margin: 5px 0;
+      }
+
+      main {
+        padding: 15px;
+      }
+
+      .hero {
+        padding: 20px;
+      }
+
+      .image-gallery {
+        grid-template-columns: 1fr;
       }
     }
   </style>
 </head>
 <body>
-
   <header>
-    <h1>Speak Louder, Love Harder</h1>
-    <p>For the Love of Pitbulls</p>
+    <h1>Pitbull Love</h1>
   </header>
-
   <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Me</a></li>
-      <li><a href="mental-health.html">Mental Health</a></li>
-      <li><a href="cf.html">Cystic Fibrosis</a></li>
-      <li><a href="cirrhosis.html">Cirrhosis</a></li>
-      <li><a href="pitbull-love.html">Pitbull Love</a></li>
-      <li><a href="addiction.html">Addiction</a></li>
-      <li><a href="foster-children.html">Foster Children</a></li>
-      <li><a href="domestic-violence.html">Domestic Violence</a></li>
-      <li><a href="sa-awareness.html">Sexual Assault</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="connect.html">Connect</a></li>
-    </ul>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Me</a>
+    <a href="mental-health.html">Mental Health</a>
+    <a href="cystic-fibrosis.html">Cystic Fibrosis</a>
+    <a href="cirrhosis.html">Cirrhosis</a>
+    <a href="addiction-awareness.html">Addiction Awareness</a>
+    <a href="foster-children.html">Foster Children</a>
+    <a href="domestic-violence.html">Domestic Violence</a>
+    <a href="sexual-assault.html">Sexual Assault</a>
+    <a href="pitbull-love.html" class="active">Pitbull Love</a>
+    <a href="blog.html">Blog</a>
+    <a href="connect.html">Connect</a>
   </nav>
-
   <main>
-    <h2>Pitbull Love</h2>
+    <section class="hero">
+      <h2>Zayah: My Heart in a Dog’s Body</h2>
+      <p>Pitbulls aren’t the problem—ignorance is. Zayah has shown me more love and loyalty than most humans ever have.</p>
+    </section>
 
-    <p>Pitbulls aren’t monsters. They’re loyal, loving, smart, and deeply misunderstood. The stigma around this breed has led to fear, bans, and far too many being left behind or put down simply because of how they look.</p>
+    <section class="content-section">
+      <h3>My Story with Zayah</h3>
+      <p>When I got Zayah, I was in a rough place. I needed stability, loyalty, and unconditional love—and she gave me all of that without hesitation. She’s not just a dog—she’s my emotional support, my protector, and my family. Despite everything pitbulls are wrongly accused of, Zayah has done nothing but love deeply and fiercely. She’s helped me heal from trauma and taught me what it means to be trusted again.</p>
+    </section>
 
-    <img src="zayah-smiling.jpg" alt="Zayah the pitbull, smiling proudly">
+    <section class="content-section facts-box">
+      <h3>Myths vs Facts About Pitbulls</h3>
+      <ul>
+        <li><strong>Myth:</strong> Pitbulls are naturally aggressive.<br><strong>Fact:</strong> Any dog can be aggressive if mistreated. Pitbulls are actually very loyal and people-loving.</li>
+        <li><strong>Myth:</strong> Pitbulls have “locking jaws.”<br><strong>Fact:</strong> That’s completely false. No dog has a mechanism that locks their jaws.</li>
+        <li><strong>Myth:</strong> Pitbulls are not safe around children.<br><strong>Fact:</strong> Pitbulls are known as “nanny dogs” for their gentleness with kids.</li>
+      </ul>
+    </section>
 
-    <h3>Meet Zayah</h3>
-    <p>This is Zayah — my baby, my protector, and my best friend. She’s a 1-year-old pitbull with a goofy heart and the gentlest soul. She’s taught me more about unconditional love than most humans ever have.</p>
+    <section class="content-section">
+      <h3>How to Advocate for Pitbulls</h3>
+      <ul>
+        <li>Speak out against breed-specific legislation (BSL) – <a href="https://www.aspca.org/news/what-breed-specific-legislation" target="_blank">ASPCA on BSL</a></li>
+        <li>Adopt, don’t shop – Give pitbulls a chance at a loving home.</li>
+        <li>Educate others – Share accurate information and challenge stereotypes.</li>
+        <li>Support rescue organizations – <a href="https://www.pitbullinfo.org/" target="_blank">Pit Bull Info</a> | <a href="https://www.badrap.org/" target="_blank">BAD RAP</a></li>
+      </ul>
+    </section>
 
-    <h3>Why Pitbulls Need Us</h3>
-    <ul>
-      <li>They’re the most euthanized breed in shelters.</li>
-      <li>Breed-specific legislation (BSL) punishes dogs based on appearance, not behavior.</li>
-      <li>They’re amazing therapy and service animals when given a chance.</li>
-      <li>With the right love and training, they thrive in homes with kids, pets, and families.</li>
-    </ul>
+    <section class="content-section">
+      <h3>Zayah in Pictures</h3>
+      <div class="image-gallery">
+        <img src="images/zayah1.jpg" alt="Zayah laying in the sun">
+        <img src="images/zayah2.jpg" alt="Zayah playing outside">
+        <img src="images/zayah3.jpg" alt="Zayah with a big smile">
+      </div>
+    </section>
 
-    <h3>How You Can Help</h3>
-    <ul>
-      <li>Adopt, don’t shop — give a pitbull a second chance.</li>
-      <li>Advocate against breed-specific laws in your area.</li>
-      <li>Educate others about the truth behind the breed.</li>
-      <li>Support rescues and shelters that fight for pitbulls.</li>
-    </ul>
-
-    <p>Zayah and I are here to show the world what pitbull love really looks like — loud, fierce, loyal, and full of heart. 💜</p>
+    <blockquote>
+      “The only thing dangerous about a pitbull is how much they’ll steal your heart.”
+    </blockquote>
   </main>
 
   <footer>
-    <p>&copy; 2025 Speak Louder, Love Harder — Created by Larissa</p>
+    &copy; 2025 Speak Louder, Love Harder
   </footer>
-
 </body>
 </html>
