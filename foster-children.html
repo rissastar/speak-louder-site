@@ -3,231 +3,141 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Foster Care Awareness</title>
-
+  <title>Cystic Fibrosis | Speak Louder, Love Harder</title>
+  <link rel="stylesheet" href="styles.css" />
   <style>
-    /* Page Header */
-    .page-header {
-      padding: 2rem;
-      text-align: center;
-      color: white;
-      background: linear-gradient(to right, #283e51, #485563);
-    }
-
-    .foster-header {
-      background: linear-gradient(to right, #304352, #d7d2cc);
-    }
-
-    /* Collapsible FAQ */
-    .collapsible {
-      background-color: #f1f1f1;
-      color: #333;
-      cursor: pointer;
-      padding: 1rem;
-      border: none;
-      width: 100%;
-      text-align: left;
-      outline: none;
-      font-size: 1.1rem;
-      transition: background-color 0.3s ease;
-      margin-top: 10px;
-    }
-
-    .collapsible:hover {
-      background-color: #ddd;
-    }
-
-    .collapsible-content {
-      padding: 0 1rem;
-      display: none;
-      overflow: hidden;
-      background-color: #f9f9f9;
-    }
-
-    /* Slider */
-    .slider {
-      display: flex;
-      overflow-x: auto;
-      gap: 1rem;
-      margin-top: 1rem;
-    }
-
-    .slider img {
-      max-width: 100%;
-      border-radius: 10px;
-      height: auto;
-    }
-
-    /* Share Button */
-    .share-btn {
-      background-color: #6a9bd8;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      text-decoration: none;
-      display: inline-block;
-      margin-top: 1rem;
-    }
-
-    /* Navigation */
-    .main-nav ul {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      list-style: none;
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #fff8f9;
+      margin: 0;
       padding: 0;
-      background-color: #333;
-      margin: 0;
     }
 
-    .main-nav li {
-      margin: 0;
+    header {
+      background-color: #880e4f;
+      color: white;
+      padding: 20px;
+      text-align: center;
     }
 
-    .main-nav a {
+    nav {
+      background-color: #ad1457;
+      overflow: hidden;
+    }
+
+    nav a {
+      float: left;
       display: block;
       color: white;
-      padding: 1rem;
+      padding: 14px 20px;
       text-decoration: none;
     }
 
-    .main-nav a:hover, .main-nav .active {
-      background-color: #555;
+    nav a:hover {
+      background-color: #c2185b;
     }
 
-    /* Responsive Container */
-    .content-container {
-      padding: 2rem;
-      max-width: 1000px;
-      margin: auto;
+    main {
+      padding: 20px;
     }
 
-    .quote {
+    h2, h1 {
+      color: #6a1b9a;
+    }
+
+    blockquote {
       font-style: italic;
-      margin-top: 0.5rem;
+      color: #444;
+      border-left: 4px solid #ad1457;
+      margin: 20px 0;
+      padding-left: 15px;
+    }
+
+    footer {
+      background-color: #880e4f;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .important {
+      color: #c2185b;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="main-nav">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="about.html">About Me</a></li>
-      <li><a href="mental-health.html">Mental Health</a></li>
-      <li><a href="cystic-fibrosis.html">Cystic Fibrosis</a></li>
-      <li><a href="cirrhosis.html">Cirrhosis</a></li>
-      <li><a href="pitbull-love.html">Pitbull Love</a></li>
-      <li><a href="addiction-awareness.html">Addiction</a></li>
-      <li><a href="foster-children.html" class="active">Foster Care</a></li>
-      <li><a href="domestic-violence.html">Domestic Violence</a></li>
-      <li><a href="sexual-assault.html">Sexual Assault</a></li>
-      <li><a href="blog.html">Blog</a></li>
-      <li><a href="connect.html">Connect</a></li>
-    </ul>
-  </nav>
+<header>
+  <h1>Speak Louder, Love Harder</h1>
+  <p>Advocating for Cystic Fibrosis Awareness</p>
+</header>
 
-  <header class="page-header foster-header">
-    <h1>Foster Care Awareness</h1>
-    <p class="quote">"Every child deserves a safe, loving home — not just sometimes, but always."</p>
-  </header>
+<nav>
+  <a href="index.html">Home</a>
+  <a href="about.html">About Me</a>
+  <a href="mentalhealth.html">Mental Health</a>
+  <a href="cf.html">Cystic Fibrosis</a>
+  <a href="cirrhosis.html">Cirrhosis</a>
+  <a href="addiction.html">Addiction</a>
+  <a href="pitbull.html">Pitbull Love</a>
+  <a href="foster.html">Foster Children</a>
+  <a href="domestic-violence.html">Abuse & DV</a>
+  <a href="sa-awareness.html">Sexual Assault</a>
+  <a href="connect.html">Connect</a>
+  <a href="blog.html">Blog</a>
+</nav>
 
-  <main class="content-container">
+<main>
+  <h1>Cystic Fibrosis — My Journey</h1>
 
-    <button onclick="speakText('This page is dedicated to foster care awareness and how you can make a difference.')">🔊 Listen</button>
-
-     <section class="page-section">
-  <h1>My Story – Life in Foster Care</h1>
-  <blockquote class="page-quote">
-    "I was moved 11 times in one year—but never once did I feel like I belonged."
-  </blockquote>
-
-  <p>Being taken into care isn’t something you forget. One minute you’re a kid trying to hold your world together, and the next, strangers show up and decide your life for you. That’s what it felt like. No explanation that made sense, no comfort. Just <em>gone</em>. I was only 11 when they took me and my brother Keegan for the first time.</p>
-
-  <p>We were placed in foster care for 22 days, and honestly, it was terrifying. I didn’t feel safe. I didn’t feel seen. Thankfully, our Nan stepped up and got custody of us. Living with <strong>Nanny Cindy</strong> was the first time I felt like someone <em>really cared</em>. She asked if I took my CF pills, if I did my treatments—she gave a damn. That was everything to me. I didn’t have to carry it all alone.</p>
-
-  <p>But things never stayed steady for long. Keegan said our Nan was treating him badly—he felt unheard and acted out. I tried to stand up for him, being his sister and all. But that choice came with a price. They took us away from her too. From that point, everything spiraled.</p>
-
-  <p><strong>I moved 11 times in one single year.</strong> Each time, I was expected to settle in, act normal, pretend I was okay. But I wasn’t. I was hurt. I was confused. I was a kid just trying to find some ground to stand on. One time, the foster family I was staying with decided to go on vacation—and instead of finding a safe, stable place for me, they dropped me off at a new foster home in the middle of nowhere. Like I was just an afterthought. That moment broke me a little more. I didn’t feel like a person—I felt like a problem nobody wanted to deal with.</p>
-
-  <p>Eventually, Keegan and I ended up with our <strong>mom’s dad and his girlfriend</strong>. The judge made them our guardians. They were told not to smoke or drink around us, especially with me having <strong>Cystic Fibrosis</strong>. But they didn’t care. They smoked inside. I remember coughing until I collapsed on the kitchen floor. I was begging for help—texting my worker, <strong>Caroline</strong>, over and over again. She never replied. No one was listening. And when you’re a kid screaming into silence… it changes you.</p>
-
-  <p>At one point, we were put with a family that said they were going to adopt us. I thought <em>maybe this is it</em>. Maybe I’ll finally have a real home. But it didn’t feel like love. It felt like we were trophies. Something to “save” so they could feel good about themselves. I didn’t feel chosen—I felt trapped.</p>
-
-  <p>Before them, I lived with <strong>my father’s parents</strong>. And honestly? I didn’t feel like I belonged anywhere by that point. <strong>My dad never even tried to get us.</strong> He knew we were in care. He knew what we were going through. He still didn’t bother. That kind of rejection stays with you. It made me feel like I wasn’t worth fighting for. Like I was too broken for anyone to want.</p>
-
-  <p>And yeah, I was a troubled kid. But how could I not be? I was just trying to survive all the places, all the people, all the chaos. I didn’t need punishment—I needed love. I didn’t need another house—I needed a home.</p>
-
-  <p>I ended up running away—more than once. It wasn’t because I was bad. It was because <em>no one was listening</em>. The only person who really heard me at the time was my counselor at the <strong>Cystic Fibrosis Clinic</strong>. Everyone else? They judged, assumed, or ignored. And it broke something inside me.</p>
-
-  <p>All I ever wanted was to be with my mom—or back with Nanny Cindy. Somewhere that actually <em>felt</em> like love. Somewhere I could just breathe and be a kid.</p>
-
-  <blockquote class="page-subquote">
+  <blockquote>
     “This is not everything. This is not all of it. This is not even half of it.”
   </blockquote>
 
-  <hr>
+  <p>
+    Living with Cystic Fibrosis has been a journey full of challenges and resilience. Diagnosed as a child, I didn’t have a hospital stay until I was 16. But as I grew older, hospital visits became more frequent, sometimes monthly. 
+  </p>
 
-  <h2>Share Your Story</h2>
-  <form method="post" action="#">
-    <label for="name">Name (optional):</label>
-    <input type="text" id="name" name="name" placeholder="Your name"><br>
+  <p>
+    In December 2021, at age 23, I started taking Trikafta — a life-changing medication that improved my lung function and quality of life dramatically. Still, the disease demands daily care, constant vigilance, and a fighting spirit.
+  </p>
 
-    <label for="email">Email (optional):</label>
-    <input type="email" id="email" name="email" placeholder="you@example.com"><br>
+  <p>
+    CF is not just about lungs and medication. It’s about mental health, physical strength, and the community that supports you. I want to share my story to raise awareness and give hope to others facing similar battles.
+  </p>
 
-    <label for="story">Your Story:</label>
-    <textarea id="story" name="story" rows="6" placeholder="Share your experience..."></textarea><br>
+  <h2>What Is Cystic Fibrosis?</h2>
+  <p>
+    Cystic Fibrosis (CF) is a genetic disorder that affects the lungs and digestive system. It causes thick, sticky mucus to build up, leading to breathing problems, lung infections, and difficulties absorbing nutrients. CF is progressive and requires lifelong management.
+  </p>
 
-    <label><input type="checkbox" name="anonymous"> Share anonymously</label><br>
-
-    <button type="submit">Send</button>
-  </form>
-
-  <hr>
-
-  <h2>Facts & FAQs</h2>
-  <details>
-    <summary><strong>Foster Care Facts</strong></summary>
-    <ul>
-      <li>Over 60,000 children are in care across Canada.</li>
-      <li>Most foster youth move more than once. Some move more than 10 times in one year.</li>
-      <li>Youth with chronic illness, like CF, face added risks in care.</li>
-      <li>Many kids age out with no family, no support, and nowhere to go.</li>
-    </ul>
-  </details>
-
-  <details>
-    <summary><strong>Why do kids end up in foster care?</strong></summary>
-    <p>It’s not always because of abuse. Sometimes it’s poverty, mental illness, or the system failing families. In my case, it was complicated.</p>
-  </details>
-
-  <details>
-    <summary><strong>Is every foster home bad?</strong></summary>
-    <p>No—but bouncing from home to home with no stability is traumatic, even when people mean well.</p>
-  </details>
-
-  <details>
-    <summary><strong>What happens when you age out?</strong></summary>
-    <p>Many are left with nothing—no housing, no support, no plan. That’s why real change is needed.</p>
-  </details>
-
-  <details>
-    <summary><strong>How can I help?</strong></summary>
-    <p>Scroll down for links to donate, volunteer, or learn more.</p>
-  </details>
-
-  <hr>
-
-  <h2>Helpful Links</h2>
+  <h2>How You Can Help</h2>
   <ul>
-    <li><a href="https://novascotia.ca/families/foster-care/" target="_blank">Become a foster parent in Nova Scotia</a></li>
-    <li><a href="https://cwrp.ca/" target="_blank">Canadian Child Welfare Research Portal</a></li>
-    <li><a href="https://bigbrothersbigsisters.ca/" target="_blank">Volunteer with Big Brothers Big Sisters</a></li>
-    <li><a href="https://youthincare.ca/" target="_blank">Support youth aging out of care</a></li>
-    <li><a href="https://novascotia.ca/coms/families/childwelfare/" target="_blank">Report child welfare concerns</a></li>
+    <li>Donate to <a href="https://www.cysticfibrosis.ca/" target="_blank">Cystic Fibrosis Canada</a> or other CF research organizations.</li>
+    <li>Support policies that increase access to medications like Trikafta.</li>
+    <li>Raise awareness about CF through social media, schools, and community events.</li>
+    <li>Listen to and support people living with chronic illnesses.</li>
+    <li>Become an advocate — every voice matters.</li>
   </ul>
-</section>
+
+  <h2>Resources & Support</h2>
+  <ul>
+    <li><a href="https://www.cysticfibrosis.ca/" target="_blank">Cystic Fibrosis Canada</a></li>
+    <li><a href="https://www.cff.org/" target="_blank">Cystic Fibrosis Foundation (US)</a></li>
+    <li><a href="https://www.cfsource.com/" target="_blank">CF Source - Trikafta Info</a></li>
+    <li><a href="https://www.lung.ca/lung-health/lung-disease/cystic-fibrosis" target="_blank">Lung Health Foundation</a></li>
+  </ul>
+</main>
+
+<footer>
+  <p>© 2025 Speak Louder, Love Harder | Cystic Fibrosis Awareness & Advocacy</p>
+</footer>
+
+</body>
+</html>
